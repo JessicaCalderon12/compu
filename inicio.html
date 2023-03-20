@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<nav class="navbar">
+        <div class="nav-right">
+            <li><a href="colegio.html">Principal</a>
+            <li><a href="inicio.html">Inicio de Sesión</a></li>&nbsp;&nbsp;
+            <li><a href="categorias.html">Maestros</a></li>&nbsp;&nbsp;
+            <li><a href="somos.html">Sobre Nosotros</a></li>&nbsp;&nbsp;
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <script>
+		function combrobarClave(){
+			clave1=document.fl.clave1.value
+			clave2=document.fl.clave2.value
+			if (clave1 == "jessicacalderon" && clave2=="Alumnos*23"){
+				alert("Los Datos Coinciden...\n Bienvenido");
+				var href="materias.html"
+				window.location=href;
+			}
+			else{
+				alert("Error las dos claves son iguales...\n intentelo nuevamente");
+				var href="inicio.html";
+				window.location=href;
+
+			};
+		}
+	
+	</script>
+	<img src="logoipc.png" width="80" heigth="80" align="left">
+</head>
+<body>
+	<br>
+
+	<u><font color="white" size="105">Intituto Profesional de Computación</font></u>
+	<br>
+	<br>
+
+<center><table border="2" bgcolor="#40CFFF" width="550" heigth="550"></center>
+    	<tr>
+    		<td>
+    			<hr color="black">
+    			<center><img src="logoipc.png" width="100" heigth="100"></center>
+    			<hr color="black">
+
+
+	<form action="" name="fl">
+ Usuario:<input type="text" name="clave1" size="20" placeholder="Ingresa tu usuario">
+ <br>
+ <br>
+  Contraseña:<input type="password" name="clave2" size="20" placeholder="Ingresa tu contraseña" >
+  <br>
+  <br>
+		<input type="button" value="Comprobar si son iguales" onclick="combrobarClave()">comprobar si son iguales</button>
+		<br>
+		<br>
+	</form>
+</td>
+</tr>
+</table>
+<center><table></center>
+	<tr>
+     <td width="990" heigth="600">
+<p><img src="pqpin.png" width="400" heigth="400" align="right"> <img src="gorra.png" width="320" heigth="300" align="left"></p>
+</tr>
+</table>
+</body>
+<style>
+ 		body{
+ 	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSRo-OYyK0x6khkIrrJAviXkg8qKggxd0Eg&usqp=CAU);
+ 	background-size: cover;
+
+ }
+
+ .navbar{
+  display: flex;
+  background-color:rgb(40, 124, 197);
+  position: fixed;
+  top:0;
+  width: 300%;
+  font-size: 15px;
+}
+
+.nav-right{
+  text-align: right;
+  float:left;
+}
+
+.nav-right li {
+    display: inline;
+    float: left;
+    padding-left: 10px;
+  }
+
+  .nav-right li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+  }
+
+  .nav-right  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .nav-right li a:hover {
+    background-color: rgb(31, 199, 106);
+  }
+
+  .nav-right .active {
+    background-color: #04AA6D;
+}
+
+
+
+
+ 	</style>
+</body>
+
+</html>
